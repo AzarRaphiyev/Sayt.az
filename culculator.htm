@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="src/output.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sayt.az</title>
+  </head>
+  <body>
+    <header class="bg-white">
+      <nav
+        class="mx-auto flex w-[90vw] items-center justify-between p-6 lg:px-1"
+        aria-label="Global"
+      >
+        <div class="flex lg:mr-[150px]">
+          <a
+            rel="noopener noreferrer"
+            href="http://127.0.0.1:5500/index.htm"
+            aria-label="Back to homepage"
+            class="flex items-center p-2"
+          >
+            <svg
+              width="100"
+              height="40"
+              viewBox="0 0 131 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_2391_1204)">
+                <path
+                  d="M10.2789 31.0504C6.96305 31.0504 4.4557 30.4233 2.77754 29.1474C1.09937 27.8723 0.16676 25.9901 0.00128174 23.4809H2.46727C3.66878 23.4809 4.85051 24.1298 5.34694 25.2378C6.00976 26.7434 7.64745 27.4957 10.2375 27.4957C11.7709 27.4957 12.9517 27.1826 13.7809 26.5546C14.6092 25.9275 15.0031 25.1326 15.0031 24.1706C15.0031 23.5435 14.7963 23.0417 14.3817 22.6442C13.9671 22.2467 13.4284 21.9127 12.7449 21.6614C12.0614 21.3891 11.2943 21.1595 10.4246 20.9499C9.55404 20.7412 8.68439 20.5106 7.77246 20.281C6.88121 20.0514 5.99087 19.7592 5.12031 19.4244C4.24975 19.0895 3.48352 18.6711 2.80002 18.1493C2.11652 17.6266 1.57782 16.9995 1.16323 16.2254C0.748631 15.4722 0.541784 14.532 0.541784 13.424C0.541784 12.3994 0.748631 11.4583 1.16323 10.6225C1.57782 9.76491 2.17858 9.03346 2.9664 8.42725C3.75332 7.82103 4.70662 7.34006 5.82629 6.98432C6.94507 6.64945 8.23022 6.4616 9.65927 6.4616C12.8087 6.4616 15.1713 7.02606 16.7667 8.155C18.3622 9.28393 19.1904 10.9565 19.2741 13.1735H16.4358C15.3791 13.1735 14.4671 12.5464 13.9077 11.6053C13.2656 10.5181 11.9184 9.97363 9.86701 9.97363C9.26536 9.97363 8.70597 10.0362 8.16727 10.1624C7.62856 10.2876 7.1726 10.4755 6.80027 10.706C6.40636 10.9356 6.11678 11.2496 5.88834 11.6053C5.66081 11.9602 5.55649 12.3585 5.55649 12.8177C5.55649 13.2152 5.61854 13.5501 5.72197 13.8423C5.82629 14.1345 6.09519 14.4068 6.4882 14.6364C6.88211 14.8878 7.48287 15.1382 8.27069 15.3687C9.05851 15.6201 10.1152 15.8915 11.4409 16.2263C12.9329 16.6238 14.2387 17.0213 15.3161 17.4179C16.3935 17.8154 17.2847 18.2755 17.9682 18.7973C18.6526 19.3409 19.1707 19.9689 19.4809 20.7212C19.8128 21.4526 19.9567 22.3937 19.9567 23.4809C19.9567 24.5681 19.7507 25.5727 19.3361 26.492C18.9215 27.4113 18.3208 28.2063 17.4916 28.876C16.684 29.5448 15.6686 30.0676 14.4662 30.4442C13.2647 30.8199 11.8554 31.0086 10.2393 31.0086L10.2807 31.0504H10.2789ZM116.68 26.3668L130.233 11.2705V7.23479H107.957V7.77838C108.62 8.34285 109.159 9.05342 109.511 9.95276C109.676 10.3502 109.801 10.8312 109.905 11.3539H123.622L110.07 26.4503V30.4859H131V29.4822C131 27.7471 129.611 26.3459 127.892 26.3459H116.661L116.68 26.3668ZM107.606 10.9565C107.171 9.86927 106.508 9.03255 105.617 8.42634C104.684 7.79925 103.649 7.33915 102.447 7.0669C101.266 6.79556 99.8979 6.66941 98.3447 6.66941C91.7967 6.66941 88.3774 9.07429 88.0662 13.8832H90.5529C91.6923 13.8832 92.8327 13.2978 93.3291 12.2524C93.5576 11.7923 93.8885 11.3948 94.3031 11.1026C95.1728 10.4954 96.4166 10.1824 98.0534 10.1824C99.7522 10.1824 100.974 10.4954 101.721 11.1652C102.301 11.6253 102.695 12.2524 102.881 13.0682C102.964 13.3813 103.005 13.7997 103.027 14.3433C103.047 14.866 103.068 15.4931 103.068 16.1828H101.099C96.4588 16.1828 92.9775 16.8516 90.677 18.1902C88.854 19.2574 87.7766 20.7402 87.3827 22.6433C88.0455 23.166 88.6049 23.8149 89.0411 24.5672C89.2273 24.8803 89.3927 25.1943 89.4962 25.5291C89.7866 26.3032 89.9521 27.1182 89.9521 27.9966C89.9521 28.4985 89.8901 29.0003 89.7866 29.4604C90.471 29.9414 91.2373 30.318 92.1069 30.5894C93.0809 30.8825 94.0963 31.0286 95.1944 31.0286C98.4059 31.0286 101.037 30.1084 103.109 28.2471V30.485H105.14C106.86 30.485 108.248 29.0838 108.248 27.3487V15.4096C108.248 13.5065 108.021 12.0219 107.585 10.9347L107.606 10.9565ZM103.089 24.3594C102.758 24.8195 102.364 25.2369 101.929 25.6135C101.473 25.9901 100.996 26.3041 100.457 26.5546C99.9186 26.806 99.3592 27.0147 98.7584 27.1617C98.1577 27.3078 97.5569 27.3705 96.9355 27.3705C95.5883 27.3705 94.5118 27.0773 93.7239 26.5129C92.9163 25.9484 92.5215 25.0908 92.5215 23.9828C92.5215 22.4563 93.205 21.3274 94.5522 20.595C95.8994 19.8636 97.9301 19.5079 100.602 19.5079H103.089V24.3793V24.3594ZM76.7103 27.9975C76.7103 27.6209 76.7516 27.2443 76.8137 26.8895C76.7516 26.8895 76.6896 26.8895 76.6275 26.8895C76.275 26.8895 75.9647 26.8477 75.6949 26.7425C75.4251 26.6381 75.1769 26.4711 74.9898 26.1989C74.8037 25.9266 74.658 25.5718 74.5546 25.0899C74.4502 24.6089 74.4089 23.9818 74.4089 23.2295V10.9347H75.0717C76.7912 10.9347 78.1798 9.53349 78.1798 7.79835V7.00337H74.408V3.1356C74.408 1.40045 73.0194 -0.000732422 71.2999 -0.000732422H69.2071V7.00428C67.5703 7.00428 66.2438 8.34285 66.2438 9.9945V10.9356H69.2071V23.8784C69.2071 25.0491 69.2898 26.0528 69.4562 26.9312C69.6217 27.8088 69.9329 28.5203 70.4095 29.1056C70.8655 29.6701 71.5076 30.1093 72.3368 30.4024C73.1444 30.6946 74.2011 30.8417 75.4863 30.8417C76.087 30.8417 76.6464 30.8208 77.1438 30.779C77.1851 30.779 77.2481 30.7582 77.2895 30.7582C77.2274 30.5912 77.1653 30.4233 77.124 30.2563C76.8749 29.5666 76.7507 28.8134 76.7507 28.0402L76.7103 27.9975ZM60.0716 7.02606H61.087C63.2427 7.02606 64.7554 9.20044 63.9882 11.2496L56.9024 30.5068C56.4464 31.741 56.0111 32.8282 55.6172 33.7484C55.2233 34.6686 54.8303 35.4209 54.4571 36.0271C54.1468 36.529 53.7943 37.0308 53.4003 37.5118C53.0064 37.9928 52.5712 38.4111 52.0738 38.7868C51.5765 39.1626 51.0378 39.4557 50.4163 39.6644C49.8156 39.8949 49.1312 39.9993 48.3856 39.9993C47.7426 39.9993 47.2246 39.9575 46.8316 39.8949C46.0851 39.7697 45.5464 39.1208 45.5464 38.3685V35.1069C45.9197 35.253 46.2929 35.3583 46.6652 35.4C47.0384 35.4627 47.4117 35.4835 47.7633 35.4835C48.2606 35.4835 48.6959 35.3783 49.1105 35.1695C49.5044 34.9608 49.8767 34.6468 50.2086 34.2285C50.5405 33.8101 50.8507 33.2874 51.1619 32.6603C51.4515 32.0332 51.7627 31.3226 52.0316 30.4859L43.3287 7.02606H46.5411C47.8883 7.02606 49.0691 7.90362 49.4837 9.17957L52.1359 17.3553C52.5298 18.6094 52.9228 19.8645 53.2753 21.0978C53.6486 22.3311 54.0416 23.5653 54.4562 24.7986L60.0501 7.02606H60.0716ZM38.189 28.2489C36.0962 30.1102 33.444 31.0504 30.1902 31.0504C29.0922 31.0504 28.0561 30.9043 27.0821 30.6112C26.1081 30.318 25.2376 29.8788 24.5127 29.3143C23.787 28.7499 23.1862 28.0393 22.7716 27.1817C22.3363 26.345 22.1295 25.3622 22.1295 24.2332C22.1295 21.4944 23.2896 19.4461 25.6315 18.0867C27.9518 16.7273 31.4754 16.0584 36.1376 16.0584H38.1269C38.1269 15.347 38.1062 14.7407 38.0855 14.1971C38.0648 13.6536 38.0028 13.2352 37.9398 12.9221C37.7537 12.1072 37.3598 11.4792 36.7797 10.9982C36.0332 10.3493 34.811 10.0154 33.0915 10.0154C31.434 10.0154 30.1696 10.3285 29.2999 10.9347C28.8646 11.2487 28.5337 11.6253 28.3052 12.1063C27.8079 13.1517 26.6684 13.7579 25.5074 13.7579H23C23.2896 8.90732 26.7503 6.48065 33.3604 6.48065C34.9145 6.48065 36.303 6.62767 37.5046 6.87814C38.707 7.14948 39.7637 7.60959 40.6954 8.23758C41.6073 8.84379 42.2701 9.70138 42.7054 10.7886C43.1407 11.8758 43.3682 13.3813 43.3682 15.3052V27.3696C43.3682 29.1047 41.9797 30.5059 40.2601 30.5059H38.1872V28.248L38.189 28.2489ZM38.1476 19.4253H35.6402C32.9467 19.4253 30.8953 19.8019 29.5274 20.5333C28.1595 21.2657 27.476 22.4155 27.476 23.9628C27.476 25.0917 27.87 25.9493 28.6776 26.5138C29.4861 27.0782 30.5635 27.3714 31.9314 27.3714C32.5528 27.3714 33.1536 27.3088 33.7759 27.1626C34.3767 27.0165 34.9567 26.8078 35.4954 26.5564C36.0341 26.2851 36.5315 25.9711 36.9874 25.5945C37.4434 25.2179 37.8373 24.7995 38.1683 24.3394V19.4262L38.1476 19.4253Z"
+                  fill="#334155"
+                />
+                <path
+                  d="M83.2174 32.4942C85.6825 32.4942 87.6718 30.4868 87.6718 27.9985C87.6718 25.5101 85.6834 23.5027 83.2174 23.5027C80.7514 23.5027 78.7621 25.5101 78.7621 27.9985C78.7621 30.4868 80.7514 32.4942 83.2174 32.4942Z"
+                  fill="#7D3BE2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_2391_1204">
+                  <rect width="131" height="40" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+
+        <div class="flex lg:hidden cursor-pointer">
+          <i
+            class="fa-solid fa-bars cursor-pointer scale-[1.1]"
+            onclick="showBasket(false)"
+            style="color: #000000"
+          ></i>
+        </div>
+        <div class="hidden lg:flex lg:gap-x-10">
+          <div class="relative">
+            <button
+              type="button"
+              class="flex hover:text-violet-600 items-center gap-x-1 text-sm/15 font-semibold text-gray-900"
+              aria-expanded="false"
+              onclick="openProductSec()"
+            >
+              Veb sayt
+              <svg
+                class="size-5 flex-none text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <div
+              id="productSec"
+              class="hidden absolute top-full right-[-20px] z-10 mt-3 w-[23vw] max-w-md overflow-hidden rounded-xl bg-white ring-1 shadow-lg ring-gray-900/5"
+            >
+              <div id="productlarim" class="p-1"></div>
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              type="button"
+              class="flex hover:text-violet-600 items-center gap-x-1 text-sm/15 font-semibold text-gray-900"
+              aria-expanded="false"
+              onclick="openDomenSec()"
+            >
+              Domen
+              <svg
+                class="size-5 flex-none text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <div
+              id="domenSec"
+              class="hidden absolute top-full right-[-100px] z-10 mt-3 w-[23vw] max-w-md overflow-hidden rounded-xl bg-white ring-1 shadow-lg ring-gray-900/5"
+            >
+              <div id="productlarim" class="p-1"></div>
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              type="button"
+              class="flex hover:text-violet-600 items-center gap-x-1 text-sm/15 font-semibold text-gray-900"
+              aria-expanded="false"
+              onclick="openHostingSec()"
+            >
+              Hosting
+              <svg
+                class="size-5 flex-none text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <div
+              id="hostingSec"
+              class="hidden absolute top-full right-[-150px] z-10 mt-3 w-[23vw] max-w-md overflow-hidden rounded-xl bg-white ring-1 shadow-lg ring-gray-900/5"
+            >
+              <div id="productlarim" class="p-1"></div>
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              type="button"
+              class="flex hover:text-violet-600 items-center gap-x-1 text-sm/15 font-semibold text-gray-900"
+              aria-expanded="false"
+              onclick="openSirketSec()"
+            >
+              Şirkətlər
+              <svg
+                class="size-5 flex-none text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <div
+              id="şirketSec"
+              class="hidden absolute top-full right-[-200px] z-10 mt-3 w-[23vw] max-w-md overflow-hidden rounded-xl bg-white ring-1 shadow-lg ring-gray-900/5"
+            >
+              <div id="productlarim" class="p-1"></div>
+            </div>
+          </div>
+          <div class="relative">
+            <button
+              type="button"
+              class="flex hover:text-violet-600 items-center gap-x-1 text-sm/15 font-semibold text-gray-900"
+              aria-expanded="false"
+              onclick="openXidmetSec()"
+            >
+              Xidmətlər
+              <svg
+                class="size-5 flex-none text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+
+            <div
+              id="xidmetSec"
+              class="hidden absolute top-full right-[-230px] z-10 mt-3 w-[23vw] max-w-md overflow-hidden rounded-xl bg-white ring-1 shadow-lg ring-gray-900/5"
+            >
+              <div id="productlarim" class="p-1"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hidden lg:flex lg:flex-1 lg:justify-end gap-5">
+          <select name="" id="" class="font-bold">
+            <option class="font-bold" value="manat">₼</option>
+            <option class="font-bold" value="dollar">$</option>
+          </select>
+          <select name="" id="">
+            <option value="Aze">
+              <img class="" src="icons/Flag_of_Azerbaijan.svg.png" alt="" />
+            </option>
+            <option value="En">
+              <img
+                class=""
+                src="icons/Flag_of_the_United_Kingdom.svg.png"
+                alt=""
+              />
+            </option>
+          </select>
+          <button
+            class="px-3 py-2 bg-[linear-gradient(90deg,#7028e4,#e5b2ca)] text-[#fff] rounded-lg"
+          >
+            Qiymət Təklifi Al
+          </button>
+          <button
+            class="border-[2px] border-[#a271f2] px-3 py-2 rounded-lg font-bold text-[#a271f2]"
+          >
+            Daxil olun
+          </button>
+        </div>
+      </nav>
+
+      <!-- Mobile menu, show/hide based on menu open state. -->
+      <div class="lg:hidden" role="dialog" aria-modal="true">
+        <!-- Background backdrop, show/hide based on slide-over state. -->
+        <div
+          id="sidebar"
+          class="transition-all fixed inset-y-0 right-[-120vw] z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        >
+          <div class="flex items-center justify-end">
+            <button
+              type="button"
+              class="-m-2.5 rounded-md p-2.5 text-gray-700"
+              onclick="showBasket(true)"
+            >
+              <span class="sr-only">Close menu</span>
+              <svg
+                class="size-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                aria-hidden="true"
+                data-slot="icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18 18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Veb sayt
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div id="mobileVebSite" class="accordion-body"></div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Domen
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div id="mobileDomen" class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Hostinq
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div id="mobileHostinq" class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Şirkətlər
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div id="mobileŞirkətlər" class="accordion-body"></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFive"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFive"
+                >
+                  Xidmətlər
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFive"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div id="mobileXidmetler" class="accordion-body"></div>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6">
+              <div class="py-6 px-3">
+                <select name="" id="" class="font-bold">
+                  <option class="font-bold" value="manat">₼</option>
+                  <option class="font-bold" value="dollar">$</option>
+                </select>
+                <select name="" id="">
+                  <option value="Aze"></option>
+                  <option value="En">🇦🇿</option>
+                </select>
+              </div>
+              <div class="py-6 px-3">
+                <button
+                  class="block mb-2 w-[100%] px-3 py-2 bg-[linear-gradient(90deg,#7028e4,#e5b2ca)] text-[#fff] rounded-lg"
+                >
+                  Qiymət Təklifi Al
+                </button>
+                <button
+                  class="block w-[100%] border-[2px] border-[#a271f2] px-3 py-2 rounded-lg font-bold text-[#a271f2]"
+                >
+                  Daxil olun
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div
+          id="culculator"
+          class="container flex relative overflow-hidden lg:flex-row flex-col gap-10 bg-[#F5F5F5] p-3 w-[30vw]"
+        >
+          <div
+            id="hesablananhisse"
+            class="lg:w-[60%] w-[100%] bg-white rounded-xl p-2"
+          >
+            <h1 class="font-bold text-[#1c2434]">Qiymət Təklifi Al</h1>
+            <p class="mt-[30px]">Statik səhifələr</p>
+            <div
+              id="seyfeSectionu"
+              class="staticPage bg-[#f8f8fa] mt-2 rounded-md overflow-hidden"
+            >
+              <div class="mt-4 py-2 px-4">
+                <p class="mb-4">Neçə statik səhifə olacaq?</p>
+                <div class="flex justify-between items-center">
+                  <span
+                    class="bg-[#A271F2] text-white flex xmd:w-8 w-6 xmd:h-8 h-6 xmd:text-base text-sm items-center justify-center rounded-md"
+                    >1</span
+                  ><input
+                    oninput="ilkhissehesabla()"
+                    id="seyfeId"
+                    class="w-10/12 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-mainLightPurple"
+                    min="1"
+                    max="20"
+                    step="1"
+                    type="range"
+                    value="1"
+                  /><span
+                    class="bg-[#A271F2] text-white flex xmd:w-8 w-6 xmd:h-8 h-6 xmd:text-base text-sm items-center justify-center rounded-md"
+                    >20</span
+                  >
+                </div>
+              </div>
+              <div
+                class="mt-4 py-2 px-4 flex xmd:flex-row lg:flex-row lg:justify-center flex-col xmd:justify-between xmd:items-center gap-x-2"
+              >
+                <p>
+                  Dizayn <span class="whitespace-nowrap"> mürəkkəblik :</span>
+                </p>
+                <div
+                  class="flex flex-col justify-center gap-4 xmd:w-4/6 w-full xmd:mt-0 mt-4"
+                >
+                  <div
+                    class="flex justify-between items-center text-xs xmd:text-base xmd:gap-x-0 gap-x-4 xmd:pr-4 pr-0"
+                  >
+                    <span>Sadə</span><span>Orta</span><span>Xüsusi</span>
+                  </div>
+                  <div>
+                    <input
+                      oninput="ilkhissehesabla()"
+                      id="murekkeblikInput"
+                      class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-mainLightPurple"
+                      min="1"
+                      max="3"
+                      step="1"
+                      type="range"
+                      value="1"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div
+                class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]"
+              >
+                <p class="text-[#285a70]">Xərc :</p>
+                <p
+                  class="text-mainLightPurple sm:text-[22px] font-semibold"
+                  id="ilkxerc"
+                ></p>
+              </div>
+            </div>
+
+            <div id="vebSaytSectionu">
+              <p class="mt-[30px]">Veb sayt əlavələri</p>
+              <div class="addOnsPage bg-[#f8f8fa] mt-2 rounded-xl">
+                <div
+                  class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 mt-4 py-2 px-4"
+                  id="elaveler"
+                ></div>
+
+                <div
+                  class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]"
+                >
+                  <p class="text-[#285a70]">Xərc :</p>
+                  <p
+                    class="text-mainLightPurple sm:text-[22px] font-semibold"
+                    id="elavelerxerc"
+                  >
+                    ₼ 0
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="axtarisMotoruSectionu" class="mb-10">
+              <h3 class="text-[#212529] text-lg font-medium mt-3">
+                Axtarış motorunun optimallaşdırılması
+              </h3>
+              <div class="seoPage bg-[#f8f8fa] mt-2 rounded-md overflow-hidden">
+                <div
+                  class="grid xmd:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 py-4 px-4"
+                  id="amoH"
+                ></div>
+                <div
+                  class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]"
+                >
+                  <p class="text-[#285a70]">Xərc :</p>
+                  <p
+                    class="text-mainLightPurple sm:text-[22px] font-semibold"
+                    id="amoHXerc"
+                  >
+                    ₼ 0
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div id="elektronTicaretSectionu" class="mb-10">
+              <h3 class="text-[#212529] text-lg font-medium mt-3">
+                Elektron ticarət əlavələri
+              </h3>
+              <div
+                class="addOnsPage bg-[#f8f8fa] mt-2 rounded-md overflow-hidden"
+              >
+                <div
+                  class="grid lg:grid-cols-2 grid-cols-1 gap-x-6 gap-y-4 mt-4 py-2 px-4"
+                  id="ETE"
+                >
+                  <label
+                    class="relative xl:items-center gap-x-2 flex cursor-pointer justify-between"
+                    ><div class="w-3/4">
+                      <span class="text-sm font-medium text-gray-900"
+                        >Ödəniş</span
+                      >
+                    </div>
+                    <div>
+                      <input
+                        class="sr-only peer"
+                        type="checkbox"
+                        name="Ödəniş"
+                      />
+                      <div
+                        class="w-11 h-6 bg-gray-200 rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:right-[22px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all duration-300 after:duration-300 peer-checked:bg-mainLightPurple"
+                      ></div></div
+                  ></label>
+                </div>
+                <div
+                  class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]"
+                >
+                  <p class="text-[#285a70]">Xərc :</p>
+                  <p
+                    class="text-mainLightPurple sm:text-[22px] font-semibold"
+                    id="etexerc"
+                  >
+                    ₼ 0
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div id="logoDizayniSectionu" class="mb-10">
+              <h3 class="text-[#212529] text-lg font-medium mt-3">
+                Logo dizaynı
+              </h3>
+              <div
+                class="logoPage bg-[#f8f8fa] mt-2 rounded-md overflow-hidden"
+              >
+                <div
+                  class="flex flex-col justify-center gap-4 w-full sm:mt-0 mt-4 py-2 px-4"
+                >
+                  <div
+                    class="flex justify-between items-center text-xs xmd:text-base sm:gap-x-0 gap-x-4 px-2"
+                  >
+                    <span>Ehtiyac yoxdur</span><span>Sadə</span
+                    ><span>Xüsusi</span>
+                  </div>
+                  <input
+                    onchange="logoemeliyyat()"
+                    id="logoinp"
+                    class="md:ml-4 ml-0 md:w-11/12 w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-mainLightPurple"
+                    min="1"
+                    max="3"
+                    step="1"
+                    type="range"
+                    value="1"
+                  />
+                </div>
+                <div
+                  class="flex justify-between items-center mt-4 py-4 px-4 bg-[#4a84bf26]"
+                >
+                  <p class="text-[#285a70]">Xərc :</p>
+                  <p
+                    class="text-mainLightPurple sm:text-[22px] font-semibold"
+                    id="logoxerc"
+                  >
+                    ₼ 0
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col gap-1 lg:w-[40%] w-[100%] p-8 bg-white rounded-xl right-[10px] h-[600px]"
+          >
+            <p>Təklifiniz</p>
+            <p class="flex flex-row justify-between items-center">
+              <span class="text-[#8b8b9a]"> Statik səhifələr : </span
+              ><span
+                class="text-mainLightPurple font-bold text-lg"
+                id="statikSəhifələrUmumi"
+                >₼ 300</span
+              >
+            </p>
+            <p class="flex flex-row justify-between items-center">
+              <span class="text-[#8b8b9a]"> Əlavələr: </span
+              ><span
+                class="text-mainLightPurple font-bold text-lg"
+                id="elavelerUmumi"
+              >
+                ₼ 0</span
+              >
+            </p>
+            <p class="flex flex-row justify-between items-center">
+              <span class="text-[#8b8b9a]"> SEO : </span
+              ><span
+                class="text-mainLightPurple font-bold text-lg"
+                id="amoHUmumi"
+              >
+                ₼ 0</span
+              >
+            </p>
+            <p class="flex flex-row justify-between items-center">
+              <span class="text-[#8b8b9a]"> E-ticarət : </span
+              ><span
+                class="text-mainLightPurple font-bold text-lg"
+                id="eticaretUmumi"
+              >
+                ₼ 0</span
+              >
+            </p>
+            <p class="flex flex-row justify-between items-center">
+              <span class="text-[#8b8b9a]"> Logo dizaynı : </span
+              ><span
+                class="text-mainLightPurple font-bold text-lg"
+                id="logoUmumi"
+              >
+                ₼ 0</span
+              >
+            </p>
+            <hr />
+            <p
+              class="flex flex-row justify-between items-center gap-4 text-[#8b8b9a] text-base text-right"
+            >
+              <span class="font-bold whitespace-nowrap"> Qeyd : </span
+              ><span class="text-base">
+                Minimum sayt qiyməti
+                <span class="text-mainLightPurple whitespace-nowrap"
+                  >₼ 450</span
+                ></span
+              >
+            </p>
+            <h3
+              class="bg-purple-900 text-white lg:text-2xl text-sm p-3 lg:p-8 flex flex-row justify-between items-center w-[100%]"
+            >
+              <span>Ümumi təxmini dəyəri: </span
+              ><span class="font-semibold whitespace-nowrap" id="totalQiymet"
+                >₼ 1300</span
+              >
+            </h3>
+            <div class="mt-13">
+              <button
+                class="bg-[#2bc48a] w-full text-white font-bold lg:p-4 p-3 rounded-md lg:text-2xl text-sm"
+              >
+                Saytınızı İndi Sifariş Edin
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section id="myChat">
+      <button
+        id="chatButton"
+        class="fixed bottom-5 right-5 bg-purple-600 text-white p-4 rounded-full text-lg font-bold shadow-lg hover:scale-110 transition-transform"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 800 800"
+          height="32px"
+          width="32px"
+          role="img"
+          alt="Söhbət ikonu"
+          aria-labelledby="openIconTitle openIconDesc"
+          class="tawk-min-chat-icon fill-white"
+        >
+          <title id="openIconTitle">Opens Chat</title>
+          <desc id="openIconDesc">This icon Opens the chat window.</desc>
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M400 26.2c-193.3 0-350 156.7-350 350 0 136.2 77.9 254.3 191.5 312.1 15.4 8.1 31.4 15.1 48.1 20.8l-16.5 63.5c-2 7.8 5.4 14.7 13 12.1l229.8-77.6c14.6-5.3 28.8-11.6 42.4-18.7C672 630.6 750 512.5 750 376.2c0-193.3-156.7-350-350-350zm211.1 510.7c-10.8 26.5-41.9 77.2-121.5 77.2-79.9 0-110.9-51-121.6-77.4-2.8-6.8 5-13.4 13.8-11.8 76.2 13.7 147.7 13 215.3.3 8.9-1.8 16.8 4.8 14 11.7z"
+          ></path>
+        </svg>
+      </button>
+
+      <div
+        id="chatBox"
+        class="fixed bottom-16 right-5 w-80 bg-white shadow-2xl rounded-lg hidden"
+      >
+        <div
+          class="bg-purple-600 text-white p-3 rounded-t-lg flex justify-between items-center"
+        >
+          <span class="font-bold">Online Chat</span>
+          <button
+            id="closeChat"
+            class="text-white font-bold transform transition-all duration-500 ease-in-out bg-gradient-to-r from-purple-600 hover:text-black hover:rotate-180 hover:scale-110 hover:shadow-2xl hover:translate-y-1 hover:-translate-x-1"
+          >
+            &times;
+          </button>
+        </div>
+        <div
+          id="chatMessages"
+          class="p-3 h-64 overflow-y-auto flex flex-col space-y-2"
+        ></div>
+        <div class="p-2 flex">
+          <input
+            id="chatInput"
+            type="text"
+            class="flex-1 border p-2 rounded-l-lg"
+            placeholder="Mesajınızı yazın..."
+          />
+          <button
+            id="sendMessage"
+            class="bg-purple-600 text-white px-4 py-2 rounded-r-lg hover:bg-purple-700 transition"
+          >
+            Göndər
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-purple-50 text-purple-900 p-8">
+      <div
+        class="max-w-7xl py-[40px] mx-auto flex flex-wrap justify-between gap-16"
+      >
+        <div class="flex flex-col py-[20px] gap-2">
+          <a href="http://127.0.0.1:5500/index.htm" class="text-3xl font-bold"
+            ><img class="scale-110" src="icons/saytaz.svg" alt=""
+          /></a>
+
+          <p class="mt-4">
+            Sayt.az - Web saytların hazırlanması, Domain, Hosting satışı, SEO,
+            SMM və texniki xidmətlər təklif edir.
+          </p>
+
+          <div class="mt-6">
+            <p class="font-semibold mb-2">Bizi izləyin:</p>
+
+            <div class="flex py-[20px] gap-4 flex-wrap">
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="md:h-12 text-purple-600 hover:text-purple-800 transition-all h-8 md:w-12 w-8"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="md:h-12 text-purple-600 hover:text-purple-800 transition-all h-8 md:w-12 w-8"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="md:h-12 h-8 text-purple-600 hover:text-purple-800 transition-all md:w-12 w-8"
+                aria-hidden="true"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                fill="currentColor"
+                height="800px"
+                width="800px"
+                version="1.1"
+                id="Layer_1"
+                viewBox="0 0 308 308"
+                xml:space="preserve"
+                style="fill: purple-600"
+              >
+                <g id="XMLID_468_">
+                  <path
+                    id="XMLID_469_"
+                    d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156   c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687   c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887   c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153   c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348   c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802   c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922   c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0   c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458   C233.168,179.508,230.845,178.393,227.904,176.981z"
+                  ></path>
+
+                  <path
+                    id="XMLID_470_"
+                    d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716   c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396   c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z    M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188   l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677   c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867   C276.546,215.678,222.799,268.994,156.734,268.994z"
+                  ></path>
+                </g>
+              </svg>
+
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="md:h-12 text-purple-600 hover:text-purple-800 transition-all h-8 md:w-12 w-8"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M24.7154 14.9622V23.4762H19.6042V15.5324C19.6042 13.537 18.8647 12.1753 17.0151 12.1753C15.6027 12.1753 14.7623 13.093 14.3924 13.981C14.2575 14.2984 14.2227 14.7403 14.2227 15.1842V23.4762H9.10975C9.10975 23.4762 9.1785 10.0222 9.10975 8.62842H14.2218V10.7329C14.2115 10.7487 14.1982 10.7657 14.1883 10.7811H14.2218V10.7329C14.9012 9.72258 16.1141 8.27948 18.8291 8.27948C22.1937 8.27948 24.7154 10.4018 24.7154 14.9622ZM3.76184 1.47095C2.01271 1.47095 0.868958 2.5788 0.868958 4.03602C0.868958 5.46129 1.98005 6.60276 3.69438 6.60276H3.72832C5.51141 6.60276 6.61993 5.46129 6.61993 4.03602C6.58641 2.5788 5.51141 1.47095 3.76184 1.47095ZM1.17273 23.4762H6.2835V8.62842H1.17273V23.4762Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <svg
+                fill="currentColor"
+                viewBox="0 0 24 24"
+                class="md:h-12 text-purple-600 hover:text-purple-800 transition-all h-8 md:w-12 w-8"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+
+              <path
+                fill-rule="evenodd"
+                d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                clip-rule="evenodd"
+              ></path>
+            </div>
+
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                aria-label="Facebook"
+                class="text-purple-600 hover:text-purple-800"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+
+              <a
+                href="#"
+                aria-label="Instagram"
+                class="text-purple-600 hover:text-purple-800"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+
+              <a
+                href="#"
+                aria-label="WhatsApp"
+                class="text-purple-600 hover:text-purple-800"
+              >
+                <i class="fab fa-whatsapp"></i>
+              </a>
+
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                class="text-purple-600 hover:text-purple-800"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+
+              <a
+                href="#"
+                aria-label="YouTube"
+                class="text-purple-600 hover:text-purple-800"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex py-[40px] flex-wrap items-center gap-4">
+          <div class="flex flex-col items-center gap-4">
+            <h3 class="text-2xl mb-4 font-bold text-mainDarkPurple">
+              HOSTİNQ & DOMEN
+            </h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Domen</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Veb Hosting</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >VPS Hosting</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Server</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="flex flex-col items-center gap-4">
+            <h3
+              class="text-2xl font-bold mb-4 text-maindar text-mainDarkPurple"
+            >
+              ŞİRKƏT
+            </h3>
+
+            <ul class="space-y-5">
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Haqqımızda</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Əlaqə</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Bloq</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-xl text-[#581c87] hover:text-[#3b1b54]"
+                  >Portfolio</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="mt-8 border-t w-[85vw] mx-auto border-purple-200 pt-6 flex flex-col md:flex-row justify-between items-center"
+      >
+        <p>
+          &copy; Copyright 2004-2025 &copy; Sayt.az. Bütün Hüquqlar Qorunur.
+        </p>
+
+        <div class="mt-4 md:mt-0 flex items-center space-x-4">
+          <a
+            href="tel:+994703300004"
+            class="hover:underline no-underline flex items-center text-purple-600 hover:text-purple-800"
+            ><i class="fas fa-phone-alt mr-2"></i> + (99470) 330-00-04</a
+          >
+
+          <a
+            href="mailto:support@sayt.az"
+            class="hover:underline no-underline flex items-center text-purple-600 hover:text-purple-800"
+            ><i class="fas fa-envelope mr-2"></i> support@sayt.az</a
+          >
+
+          <a
+            href="#"
+            class="hover:underline no-underline flex items-center text-purple-600 hover:text-purple-800"
+            ><i class="fas fa-map-marker-alt mr-2"></i> Bizimlə Əlaqə</a
+          >
+        </div>
+      </div>
+    </footer>
+    <script src="culculator.js"></script>
+    <script src="chat.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
