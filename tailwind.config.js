@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./*.{htm,js}"],
   theme: {
-    extend: {},
+    extend: {
+      screens:{
+        komandamax:"770px",
+        komandamin:"650px"
+      }
+    },
+   
   },
   plugins: [],
 };
